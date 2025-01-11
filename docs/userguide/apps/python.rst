@@ -29,7 +29,8 @@ Practically, this means
 
 1. *Functions may need to re-import libraries.*
    Place the import statements that define functions or classes inside the function.
-   Type annotations should not use libraries defined in the function.
+   Type annotations may not reference imports only defined in the function: Either quote the names
+   of such imports, or re-import them at the module level.
 
 
   .. code-block:: python
