@@ -139,7 +139,7 @@ There are several classes of allowed types, each with different rules.
 
 - *Python Objects*: Any Python object that can be saved with
   `pickle <https://docs.python.org/3/library/pickle.html>`_ or `dill <https://dill.readthedocs.io/>`_
-  can be used as an import or output.
+  can be used as an input or output.
   All primitive types (e.g., floats, strings) are valid as are many complex types (e.g., numpy arrays).
 - *Files*: Pass files as inputs as a :py:class:`~parsl.data_provider.files.File` object.
   Parsl can transfer them to a remote system and update the ``File`` object with a new path.
